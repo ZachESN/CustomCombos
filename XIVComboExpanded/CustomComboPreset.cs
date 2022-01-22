@@ -532,13 +532,8 @@ namespace XIVComboExpandedPlugin
         [CustomComboInfo("Slice Combo", "Replace Infernal Slice with its combo chain.", RPR.JobID)]
         ReaperSliceCombo = 3901,
 
-        [ConflictingCombos(ReaperSliceGallowsFeature)]
         [CustomComboInfo("Slice Gibbet Feature", "Replace Infernal Slice with Gibbet while Reaving or Enshrouded.", RPR.JobID)]
         ReaperSliceGibbetFeature = 3903,
-
-        [ConflictingCombos(ReaperSliceGibbetFeature)]
-        [CustomComboInfo("Slice Gallows Feature", "Replace Infernal Slice with Gallows while Reaving or Enshrouded.", RPR.JobID)]
-        ReaperSliceGallowsFeature = 3904,
 
         [CustomComboInfo("Slice Enhanced Soul Reaver Feature", "Replace Infernal Slice with whichever of Gibbet or Gallows is currently enhanced while Reaving.", RPR.JobID)]
         ReaperSliceEnhancedSoulReaverFeature = 3913,
@@ -546,54 +541,26 @@ namespace XIVComboExpandedPlugin
         [CustomComboInfo("Slice Enhanced Enshrouded Feature", "Replace Infernal Slice with whichever of Gibbet or Gallows is currently enhanced while Enshrouded.", RPR.JobID)]
         ReaperSliceEnhancedEnshroudedFeature = 3914,
 
-        [CustomComboInfo("Slice Lemure's Feature", "Replace Infernal Slice with Lemure's Slice when two or more stacks of Void Shroud are active.", RPR.JobID)]
-        ReaperSliceLemuresFeature = 3919,
-
         [CustomComboInfo("Slice Communio Feature", "Replace Infernal Slice with Communio when one stack of Shroud is left.", RPR.JobID)]
         ReaperSliceCommunioFeature = 3920,
 
-        [CustomComboInfo("Slice Soulsow Feature", "Replace Infernal Slice with Soulsow when out of combat and not active.", RPR.JobID)]
-        ReaperSliceSoulsowFeature = 3930,
+        [CustomComboInfo("Soul Slice Blood Stalk Feature", "Replace Soul Slice with Blood Stalk when available.", RPR.JobID)]
+        ReaperSoulSliceBloodStalkFeature = 3925,
+		
+		[CustomComboInfo("Soul Scythe Grim Swathe Feature", "Replace Soul Scythe with Grim Swathe when available.", RPR.JobID)]
+        ReaperSoulScytheGrimSwatheFeature = 3926,
 
-        [ConflictingCombos(ReaperShadowGibbetFeature)]
-        [CustomComboInfo("Shadow Gallows Feature", "Replace Shadow of Death with Gallows while Reaving or Enshrouded.", RPR.JobID)]
-        ReaperShadowGallowsFeature = 3905,
-
-        [ConflictingCombos(ReaperShadowGallowsFeature)]
-        [CustomComboInfo("Shadow Gibbet Feature", "Replace Shadow of Death with Gibbet while Reaving or Enshrouded.", RPR.JobID)]
-        ReaperShadowGibbetFeature = 3906,
-
-        [CustomComboInfo("Shadow Lemure's Feature", "Replace Shadow of Death with Lemure's Slice when two or more stacks of Void Shroud are active.", RPR.JobID)]
-        ReaperShadowLemuresFeature = 3923,
-
-        [CustomComboInfo("Shadow Communio Feature", "Replace Shadow of Death with Communio when one stack of Shroud is left.", RPR.JobID)]
-        ReaperShadowCommunioFeature = 3924,
-
-        [CustomComboInfo("Shadow Soulsow Feature", "Replace Shadow of Death with Soulsow when out of combat, not active, and you have no target.", RPR.JobID)]
-        ReaperShadowSoulsowFeature = 3929,
-
-        [ConflictingCombos(ReaperSoulGibbetFeature)]
-        [CustomComboInfo("Soul Gallows Feature", "Replace Soul Slice with Gallows while Reaving or Enshrouded.", RPR.JobID)]
-        ReaperSoulGallowsFeature = 3925,
-
-        [ConflictingCombos(ReaperSoulGallowsFeature)]
-        [CustomComboInfo("Soul Gibbet Feature", "Replace Soul Slice with Gibbet while Reaving or Enshrouded.", RPR.JobID)]
-        ReaperSoulGibbetFeature = 3926,
-
-        [CustomComboInfo("Soul Lemure's Feature", "Replace Soul Slice with Lemure's Slice when two or more stacks of Void Shroud are active.", RPR.JobID)]
-        ReaperSoulLemuresFeature = 3927,
-
-        [CustomComboInfo("Soul Communio Feature", "Replace Soul Slice with Communio when one stack of Shroud is left.", RPR.JobID)]
-        ReaperSoulCommunioFeature = 3928,
+        [CustomComboInfo("Soul Slice Lemure's Feature", "Replace Soul Slice with Lemure's Slice when two or more stacks of Void Shroud are active.", RPR.JobID)]
+        ReaperSoulSliceLemuresFeature = 3927,
+		
+		[CustomComboInfo("Soul Scythe Lemure's Feature", "Replace Soul Scythe with Lemure's Scythe when two or more stacks of Void Shroud are active.", RPR.JobID)]
+        ReaperSoulScytheLemuresFeature = 3928,
 
         [CustomComboInfo("Scythe Combo", "Replace Nightmare Scythe with its combo chain.", RPR.JobID)]
         ReaperScytheCombo = 3902,
 
         [CustomComboInfo("Scythe Guillotine Feature", "Replace Nightmare Scythe with Guillotine while Reaving or Enshrouded.", RPR.JobID)]
         ReaperScytheGuillotineFeature = 3907,
-
-        [CustomComboInfo("Scythe Lemure's Feature", "Replace Nightmare Scythe with Lemure's Slice when two or more stacks of Void Shroud are active.", RPR.JobID)]
-        ReaperScytheLemuresFeature = 3921,
 
         [CustomComboInfo("Scythe Communio Feature", "Replace Nightmare Scythe with Communio when one stack is left of Shroud.", RPR.JobID)]
         ReaperScytheCommunioFeature = 3922,
@@ -604,26 +571,8 @@ namespace XIVComboExpandedPlugin
         [CustomComboInfo("Scythe Harvest Moon Feature", "Replace Nightmare Scythe with Harvest Moon when Soulsow is active and you have a target.", RPR.JobID)]
         ReaperScytheHarvestMoonFeature = 3932,
 
-        [CustomComboInfo("Enhanced Soul Reaver Feature", "Replace Gibbet and Gallows with whichever is currently enhanced while Reaving.", RPR.JobID)]
-        ReaperEnhancedSoulReaverFeature = 3917,
-
-        [CustomComboInfo("Enhanced Enshrouded Feature", "Replace Gibbet and Gallows with whichever is currently enhanced while Enshrouded.", RPR.JobID)]
-        ReaperEnhancedEnshroudedFeature = 3918,
-
-        [CustomComboInfo("Lemure's Soul Reaver Feature", "Replace Gibbet, Gallows, and Guillotine with Lemure's Slice or Scythe when two or more stacks of Void Shroud are active.", RPR.JobID)]
-        ReaperLemuresSoulReaverFeature = 3911,
-
-        [CustomComboInfo("Communio Soul Reaver Feature", "Replace Gibbet, Gallows, and Guillotine with Communio when one stack is left of Shroud.", RPR.JobID)]
-        ReaperCommunioSoulReaverFeature = 3912,
-
-        [CustomComboInfo("Enshroud Communio Feature", "Replace Enshroud with Communio when Enshrouded.", RPR.JobID)]
-        ReaperEnshroudCommunioFeature = 3909,
-
-        [CustomComboInfo("Blood Stalk Gluttony Feature", "Replace Blood Stalk with Gluttony when available and greater-than-or-equal-to 50 Soul Gauge is present.", RPR.JobID)]
-        ReaperBloodStalkGluttonyFeature = 3915,
-
-        [CustomComboInfo("Grim Swathe Gluttony Feature", "Replace Grim Swathe with Gluttony when available and greater-than-or-equal-to 50 Soul Gauge is present.", RPR.JobID)]
-        ReaperGrimSwatheGluttonyFeature = 3916,
+        [CustomComboInfo("Gluttony Feature", "Replace Blood Stalk and Grim Swathe with Gluttony when available and greater-than-or-equal-to 50 Soul Gauge is present.", RPR.JobID)]
+        ReaperGluttonyFeature = 3915,
 
         [CustomComboInfo("Arcane Harvest Feature", "Replace Arcane Circle with Plentiful Harvest when you have stacks of Immortal Sacrifice.", RPR.JobID)]
         ReaperHarvestFeature = 3908,
